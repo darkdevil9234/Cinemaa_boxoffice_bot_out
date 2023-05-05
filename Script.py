@@ -215,10 +215,9 @@ Nᴀᴍᴇ - {}"""
 <b>📂 Fɪʟᴇ ɴᴀᴍᴇ : </b> <code>{file_name}</code>
 
 <b>
+▫️Movies Group : @akimax_6
 
-▫️ Movies Group : @akimax_6
-
-▫️ Support ᴄʜᴀɴɴᴇʟ : @Akimaxmovies_3</b>"""
+▫️Support ᴄʜᴀɴɴᴇʟ : @Akimaxmovies_3</b>"""
 
     IMDB_TEMPLATE_TXT = """
 <b>Query: {query}
