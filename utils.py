@@ -577,6 +577,13 @@ async def get_token(bot, userid, link, fileid):
     last_date. last_time = str((datetime(year=int(year), month=int(month), day=int(day), hour=int(hour), minute=int(minute), second=int(second)))-timedelta(hours=12)).split(" ")
     tz = pytz.timezone ('Asia/Kolkata')
     curr_date, curr_time = str(datetime.now(tz)).split(" ")
+    if last_date == curr_date:
+        vr_num = 2
+    else:
+        vr_num = 1
+    shortened_verify_url = await get_verify_shorted_link(vr_num, url)
+    return str(shortened_verify_url)
+
     async def send_all(bot, userid, files, ident):
     if AUTH_CHANNEL and not await is_subscribed(bot=bot, userid=userid):
         try:
