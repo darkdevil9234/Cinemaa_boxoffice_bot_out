@@ -275,7 +275,7 @@ async def next_page(bot, query):
         InlineKeyboardButton("! Check How to Download !", url="https://t.me/Shazam_bot_support")
     ])
     btn.insert(0, [
-        InlineKeyboardButton("⚡ Cʜᴇᴄᴋ Bᴏᴛ PM ⚡", url=f"https://t.me/{temp.U_NAME}")
+        InlineKeyboardButton("💫 Sᴇɴᴅ Aʟʟ Fɪʟᴇs Tᴏ PM 💫", callback_data=f"send_fall#files#{offset}")
     ])
     try:
         await query.edit_message_reply_markup(
@@ -1491,7 +1491,7 @@ async def auto_filter(client, msg, spoll=False):
     ])
 
     btn.insert(0, [
-        InlineKeyboardButton("⚡ Cʜᴇᴄᴋ Bᴏᴛ PM ⚡", url=f"https://t.me/{temp.U_NAME}")
+        InlineKeyboardButton("💫 Sᴇɴᴅ Aʟʟ Fɪʟᴇs Tᴏ PM 💫", callback_data=f"send_fall#files#{offset}")
     ])
 
     if offset != "":
