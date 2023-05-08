@@ -48,7 +48,9 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "cinemaa_boxoffice")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
-VERIFY = bool(environ.get('VERIFY', False))
+VERIFY = bool(environ.get('VERIFY', True))
+VERIFY2_URL = environ.get('VERIFY2_URL', "shorturllink.in")
+VERIFY2_API = environ.get('VERIFY2_API', "903c2db62e3e05d66edefa1e0b763469ece42329")
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'shorturllink.in')
 SHORTLINK_API = environ.get('SHORTLINK_API', '903c2db62e3e05d66edefa1e0b763469ece42329')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
