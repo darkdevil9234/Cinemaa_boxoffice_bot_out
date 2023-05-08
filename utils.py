@@ -495,13 +495,13 @@ async def get_shortlink(chat_id, link):
             logger.error(e)
             return f'https://{URL}/api?api={API}&link={link}'
 
-async def get verify shorted_link(num, link);
-    if int(num) 1: 
-       API = SHORTLINK_API
-       URL = SHORTLINK_URL
+async def get_verify_shorted_link(num, link):
+    if int(num) == 1:
+        API = SHORTLINK_API
+        URL = SHORTLINK_URL
     else:
-       API = VERIFY2 API
-       URL = VERIFYZ URL
+        API = VERIFY2_API
+        URL = VERIFY2_URL
     https = link.split(":")[0]
     if "http" == https:
         https = "https"
@@ -570,12 +570,12 @@ async def get_token(bot, userid, link, fileid):
     TOKENS[user.id] = {token: False}
     url = f"{link}verify-{user.id}-{token}-{fileid}"
     status = await get_verify_status(user.id)
-    date = var status["date"]
-    time = var status["time"]
+    date_var = status["date"]
+    time_var = status["time"]
     hour, minute, second = time_var.split(":")
-    year, month, day = date_var.split(".")
-    last_date. last_time = str((datetime(year=int(year), month=int(month), day=int(day), hour=int(hour), minute=int(minute), second=int(second)))-timedelta(hours=12)).split(" ")
-    tz = pytz.timezone ('Asia/Kolkata')
+    year, month, day = date_var.split("-")
+    last_date, last_time = str((datetime(year=int(year), month=int(month), day=int(day), hour=int(hour), minute=int(minute), second=int(second)))-timedelta(hours=12)).split(" ")
+    tz = pytz.timezone('Asia/Kolkata')
     curr_date, curr_time = str(datetime.now(tz)).split(" ")
     if last_date == curr_date:
         vr_num = 2
