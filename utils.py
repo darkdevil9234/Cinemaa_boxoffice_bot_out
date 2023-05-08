@@ -1,6 +1,6 @@
 import logging
 from pyrogram.errors import InputUserDeactivated, UserNotParticipant, FloodWait, UserIsBlocked, PeerIdInvalid, ChatAdminRequired
-from info import AUTH_CHANNEL, LONG_IMDB_DESCRIPTION, MAX_LIST_ELM, SHORTLINK_URL, SHORTLINK_API, LOG_CHANNEL, GRP_LNK, CHNL_LNK, CUSTOM_FILE_CAPTION, VERIFY
+from info import AUTH_CHANNEL, LONG_IMDB_DESCRIPTION, MAX_LIST_ELM, SHORTLINK_URL, SHORTLINK_API, LOG_CHANNEL, GRP_LNK, CHNL_LNK, CUSTOM_FILE_CAPTION, VERIFY, VERIFY2 URL VERIFYZ API
 from imdb import Cinemagoer 
 import asyncio
 from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup
@@ -495,9 +495,13 @@ async def get_shortlink(chat_id, link):
             logger.error(e)
             return f'https://{URL}/api?api={API}&link={link}'
 
-async def get_verify_shorted_link(link):
-    API = SHORTLINK_API
-    URL = SHORTLINK_URL
+async def get verify shorted_link(num, link);
+    if int(num) 1: 
+       API = SHORTLINK_API
+       URL = SHORTLINK_URL
+    else:
+       API = VERIFY2 API
+       URL = VERIFYZ URL
     https = link.split(":")[0]
     if "http" == https:
         https = "https"
